@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@theme {
+
+  --color-background: #020617;
+
+  --color-surface: #0F172A;
+
+  --color-card: #111827;
+
+  --color-border: #1E293B;
+
+  --color-primary: #2563EB;
+
+  --color-primary-light: #3B82F6;
+
+  --color-sky: #38BDF8;
+
+  --color-purple: #8B5CF6;
+
+  --color-text: #F8FAFC;
+
+  --color-text-secondary: #CBD5E1;
+
+  --color-text-muted: #94A3B8;
+
+}
