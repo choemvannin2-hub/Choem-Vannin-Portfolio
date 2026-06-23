@@ -14,7 +14,7 @@
           <i class="fa-regular fa-user"></i>
           <span class="absolute text-[10px] font-mono bottom-2">About</span>
         </router-link>
-        <router-link to="/skills" class="active myIcon">
+        <router-link to="/skills" class="active  myIcon">
           <i class="fa-regular fa-star"></i>
           <span class="absolute text-[10px] font-mono bottom-2">Skill</span>
         </router-link>
