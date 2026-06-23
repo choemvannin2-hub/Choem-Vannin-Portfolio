@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen bg-gray-800 flex flex-col justify-center items-center text-white">
+  <main class="min-h-screen bg-background flex flex-col justify-center items-center text-white">
     <h1 class="text-4xl font-bold mb-4">
       🚧 Under Development
     </h1>

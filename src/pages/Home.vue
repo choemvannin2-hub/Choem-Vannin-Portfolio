@@ -1,7 +1,7 @@
 <template>
   <main class="hero h-screen pt-60 text-white">
     <section class="max-w-7xl mx-auto px-6 grid justify-center">
-      <span class="max-w-37 mx-auto bg-[rgba(128,128,128,0.2)] rounded-2xl px-3 py-1 text-xs text-[rgba(216,230,255,0.8)] glow-text">
+      <span class="max-w-40 mx-auto bg-[rgba(128,128,128,0.2)] rounded-2xl px-3 py-1 text-[8px] md:text-xs text-[rgba(216,230,255,0.8)] glow-text">
         <i class="fa-solid fa-circle fa-2xs glow-text" style="color: rgba(216,230,255,0.8);"></i> 
          Available for Projects
       </span>

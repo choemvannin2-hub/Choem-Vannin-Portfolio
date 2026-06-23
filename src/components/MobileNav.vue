@@ -5,7 +5,7 @@
     <img class="w-20 ms-4" src="../assets/logo.png" alt="">
   </section>
   <main class="fixed z-50 block md:hidden w-full bottom-4">
-    <section class="relative max-w-115 sm:max-w-xl  mx-auto rounded-2xl bg-slate-800/90 pt-3 pb-6 flex justify-around text-white">
+    <section class="relative max-w-90 sm:max-w-xl  mx-auto rounded-2xl bg-slate-800/90 pt-3 pb-6 flex justify-around text-white">
         <router-link to="/" class="active myIcon">
           <i class="fa-regular fa-compass"></i>
           <span class="absolute text-[10px] font-mono bottom-2">Home</span>

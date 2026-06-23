@@ -1,6 +1,6 @@
 <template>
   <main class="bg-surface w-full">
-    <section class="grid md:grid-cols-2 xl:grid-cols-[30%_20%_25%_25%] px-20 text-white md:py-15 pt-15 pb-10">
+    <section class="grid md:grid-cols-2 xl:grid-cols-[30%_20%_25%_25%] px-15 md:px-20 text-white md:py-15 pt-15 pb-10">
       <!--  -->
       <div class="md:border-r border-border py-4">
         <div class="flex space-x-3 font-semibold text-xl tracking-wide leading-5">
@@ -70,7 +70,7 @@
     <!--  -->
 
     <section class="grid items-center md:grid-cols-2 bg-card border-t shadow shadow-primary-light border-border md:py-4 pt-4 pb-2 text-white">
-      <h1 class="ps-16 mx-auto md:mx-0">© 2026 <span class="bg-linear-to-r from-blue-500 to-purple-800 bg-clip-text text-transparent"> Choem Vannin. </span><span class="text-text-muted"> All rights reserved.</span></h1>
+      <h1 class="md:ps-16 mx-auto md:mx-0 text-text-muted text-xs md:text-[14px]">© 2026 Choem Vannin.<span class="text-text-muted"> All rights reserved.</span></h1>
       <div class="md:flex hidden justify-around xl:pl-20 xl:pr-24 items-center text-text-muted">
         <a href="">Privacy Policy</a>
         <i class="fa-solid fa-circle text-[0.3rem]"></i>
