@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-surface w-full">
+  <main class="bg-surface w-full shadow-2xl shadow-white">
     <section class="grid md:grid-cols-2 xl:grid-cols-[30%_20%_25%_25%] px-15 md:px-20 text-white md:py-15 pt-15 pb-10">
       <!--  -->
       <div class="md:border-r border-border py-4">

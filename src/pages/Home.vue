@@ -14,7 +14,7 @@
       <!-- btn -->
       <div class="space-x-6 mx-auto flex items-center justify-between md:text-3xl text-2xl animate-slide-up">
         <a href="https://github.com/choemvannin2-hub" target="_blank"><i class="fa-brands fa-github" style="color: rgb(216, 230, 255);"></i></a>
-        <BaseBtn class="shadow-[0_0_40px_rgba(56,189,248,0.6)] md:shadow"><a href="https://t.me/Choem_Vannin" target="_blank"> Contact Me: <i class="fa-regular fa-paper-plane" style="color: rgb(216, 230, 255);"></i></a></BaseBtn>
+        <BaseBtn class="shadow-[0_0_40px_rgba(56,189,248,0.6)] md:shadow text-indigo-900"><a href="https://t.me/Choem_Vannin" target="_blank" class="font-bold"> Contact Me: <i class="fa-regular fa-paper-plane" style="color: rgb(216, 230, 255);"></i></a></BaseBtn>
         <router-link to="/contact"><i class="fa-regular fa-envelope" style="color: rgb(216, 230, 255);"></i></router-link>
       </div>
 

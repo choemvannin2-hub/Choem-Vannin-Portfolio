@@ -2,8 +2,21 @@
 @config "../tailwind.config.js";
 @theme {
 
+  --color-background: #0B1120;
 
-  --color-background: #010013;
+  --color-primary: #cfbcff;
+
+  --color-secondary: #cdc0e9;
+
+  --color-surface: #141218;
+
+  --color-error: #ffb4ab;
+
+  --color-accent-blue: #3B82F6;
+
+  --color-accent-cyan: #22D3EE;
+
+  /* --color-background: #010013; */
 
   --color-surface: #0F172A;
 
@@ -11,9 +24,9 @@
 
   --color-border: #1E293B;
 
-  --color-primary: #2563EB;
+  /* --color-primary: #2563EB; */
 
-  --color-primary-light: #3B82F6;
+  /* --color-primary-light: #3B82F6; */
 
   --color-sky: #38BDF8;
 

@@ -2,13 +2,13 @@
   <main class="md:fixed hidden md:block w-full z-50">
     <section class="flex shadow-2xs bg-transparent backdrop-blur-md rounded-4xl mt-4 max-w-6xl mx-auto">
       <div class="lg:pe-70 sm:pe-60">
-        <img class="w-20 ms-5 py-2 " src="../assets/logo.png" alt="">
+        <router-link to="/"><img class="w-20 ms-5 py-2 " src="../assets/logo.png" alt=""></router-link>
       </div>
       <div class="flex w-2xl myColor justify-evenly items-center font-semibold text-lg font-sans">
-        <router-link to="/" class="myHover">Home</router-link>
-        <router-link to="/about" class="myHover">About</router-link>
-        <router-link to="/projects" class="myHover">Projects</router-link>
-        <router-link to="/skills" class="myHover">Skills</router-link>
+        <router-link to="/" class="myHover animate-slide-up">Home</router-link>
+        <router-link to="/about" class="myHover animate-slide-up-10">About</router-link>
+        <router-link to="/projects" class="myHover animate-slide-up-15">Projects</router-link>
+        <router-link to="/skills" class="myHover animate-slide-up-18">Skills</router-link>
         <router-link to="/contact"><BaseBtn>Contact</BaseBtn></router-link>
         <button><i class="fa-solid fa-circle-question"></i></button>
       </div>
@@ -55,9 +55,9 @@
 
 /* Active page glow */
 .router-link-exact-active {
-  filter: drop-shadow(0 0 8px rgba(56,189,248,0.8));
+  filter: drop-shadow(0 0 8px rgba(56,189,248,0.9));
 }
-  .myColor{
-    color: rgba(255, 255, 255, 0.8);
-  }
+.myColor{
+  color: rgba(255, 255, 255, 0.8);
+}
 </style>
