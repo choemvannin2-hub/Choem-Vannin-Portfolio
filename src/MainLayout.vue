@@ -7,7 +7,7 @@
          <MobileNav/>
         <!-- Home -->
         <router-view/>
-        
+
         <!-- Footer -->
         <Footer/>
     </main>

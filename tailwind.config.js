@@ -41,8 +41,8 @@ export default {
         'slide-up-10': 'slideUp 1s ease-out',
         'slide-up-15': 'slideUp 1.5s ease-out',
         'slide-up-18': 'slideUp 1.8s ease-out',
-        'slide-in-left': 'slideInLeft 0.5s ease-out',
-        'slide-in-right': 'slideInRight 0.5s ease-out',
+        'slide-in-left': 'slideInLeft 1s ease-out',
+        'slide-in-right': 'slideInRight 1s ease-out',
       },
       keyframes: {
         fadeIn: {
