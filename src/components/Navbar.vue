@@ -45,7 +45,8 @@
 .myHover::after {
   content: "";
   position: absolute;
-
+  cursor: pointer;
+  
   left: 50%;
   bottom: -4px;
 

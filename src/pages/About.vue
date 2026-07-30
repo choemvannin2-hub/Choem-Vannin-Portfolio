@@ -5,7 +5,7 @@
        <section class="grid justify-center xl:justify-start lg:pt-30 animate-slide-up-10">
          <div class="md:w-110 md:h-110 w-70 h-70 rounded-xl overflow-hidden shadow-primary-400 shadow-[0_0_25px_rgba(0,0,0,0.15)]">
            <img
-             src="../assets/image.png"
+             src="../assets/Profile.png"
              class="w-full h-full object-cover scale-110 lg:hover:scale-100 md:active:hover:scale-100 transition duration-700"
            />
          </div>
@@ -16,7 +16,7 @@
         <div class="animate-slide-up-10">
           <h1 class="xl:text-5xl text-3xl font-bold pb-4">About <span class="text-primary">Me</span></h1>
           <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed md:text-xl text-text-secondary">
-              I am an 19-year-old IT student at the <span class="text-primary font-semibold">Royal University of Phnom Penh</span>. Driven by a passion for creating high-performance digital experiences, I focus on the intersection of modern aesthetics and technical excellence.
+              I am an 19-year-old Computer Science student at the <span class="text-primary font-semibold">Royal University of Phnom Penh</span>. Driven by a passion for creating high-performance digital experiences, I focus on the intersection of modern aesthetics and technical excellence.
           </p>
           <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed md:text-xl text-text-secondary pt-3">
             Outside of coding, I enjoy exploring new technologies, working on personal projects, and continuously improving my web development skills.
@@ -26,9 +26,9 @@
         <div class="grid md:grid-cols-2 grid-cols-1 gap-6 mt-6 xl:mt-6">
           
           <!-- education -->
-          <div class="bg-mist-900 py-7 px-5 rounded-lg border animate-slide-up-10 group">
+          <div class="shadow shadow-accent-blue bg-[#09215552] py-7 px-5 rounded-lg animate-slide-up-10 group">
             <h1 class="text-text-muted text-xl">
-              <span class="bg-[rgba(97,97,97,0.4)] p-2 rounded-sm text-primary mr-3 transition-all duration-300 group-hover:rounded-b-4xl">
+              <span class="bg-accent-cyan p-2 rounded-sm text-text mr-3 transition-all duration-300 group-hover:rounded-b-4xl">
                 <i class="fa-solid fa-graduation-cap transition-transform duration-300 group-hover:-translate-y-1"></i>
               </span>
               EDUCATION
@@ -38,9 +38,9 @@
           </div>
 
           <!-- location & AGE & NAME -->
-          <div v-for="(data,index) in datas" :key="index" class="bg-mist-900 py-7 px-5 rounded-lg border animate-slide-up-10 group">
+          <div v-for="(data,index) in datas" :key="index" class="shadow shadow-accent-blue bg-[#09215552] py-7 px-5 rounded-lg animate-slide-up-10 group">
             <h1 class="text-text-muted text-xl">
-              <span class="bg-[rgba(97,97,97,0.4)] py-2 px-3 rounded-sm text-primary mr-3 transition-all duration-300 group-hover:rounded-b-4xl">
+              <span class="bg-[#070fef6b] py-2 px-3 rounded-sm text-text mr-3 transition-all duration-300 group-hover:rounded-b-4xl">
                 <i :class="`fa-solid ${data.icon} transition-transform duration-300 group-hover:-translate-y-1`"></i>
               </span> 
                 {{data.title}}
