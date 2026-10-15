@@ -16,7 +16,7 @@
           <p>Explore on GitHub</p>
           <i class="fa-solid fa-arrow-right text-text-muted transition-transform duration-300 group-hover:translate-x-1"></i>
         </a>
-      </section>
+      </section> 
 
        <!-- body of Project page -->
        <section class="grid md:grid-cols-2 md:gap-x-10 gap-y-16 pt-12 animate-slide-up-15">
@@ -28,12 +28,11 @@
           :description="project.description"
           :image="project.image"
           >
-            <a @click="goToProject" href="#" class="bg-[rgba(128,128,128,0.2)] text-center rounded-2xl px-4 py-2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-            <a @click="goToProject" href="#" class="bg-[rgba(128,128,128,0.2)] rounded-full px-4 py-3"><i class="fa-solid fa-angle-left"></i><i class="fa-solid fa-angle-right"></i></a>
+            <a href="https://nin-store-cambodia.vercel.app/" class="bg-[rgba(128,128,128,0.2)] text-center rounded-2xl px-4 py-2" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a href="https://nin-store-cambodia.vercel.app/" class="bg-[rgba(128,128,128,0.2)] rounded-full px-4 py-3" target="_blank"><i class="fa-solid fa-angle-left"></i><i class="fa-solid fa-angle-right"></i></a>
         </CardProject>
         
        </section>
-
     </div>
   </main>
 </template>

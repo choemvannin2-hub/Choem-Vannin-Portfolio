@@ -2,7 +2,7 @@
   <section id="nav" :class="[`fixed z-50 block md:hidden w-full scroll-m-2 pt-2  transition-all duration-300`,
   isScrolled ? 'bg-[rgba(128,128,128,0.2)] backdrop-blur-md shadow-lg' : 'bg-transparent'
   ]">
-    <img class="w-20 ms-4 myLogo drop-shadow-" src="../assets/logo.png" alt="">
+    <img class="w-20 ms-4 myLogo drop-shadow-" src="../assets/logo.png" alt="Choem Vannin logo">
   </section>
   <main class="fixed z-50 block md:hidden w-full bottom-4">
     <section class="relative max-w-90 sm:max-w-xl  mx-auto rounded-2xl bg-slate-800/90 pt-3 pb-6 flex justify-around text-white animate-slide-up-10">

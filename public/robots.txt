@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://choem-vannin.vercel.app/sitemap.xml

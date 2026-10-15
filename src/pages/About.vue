@@ -1,80 +1,130 @@
 <template>
-  <main class="bg-surface text-white pt-6">
-    <div class=" grid xl:grid-cols-[40%_60%] xl:px-24 px-12 justify-center py-24">
-      <!-- profile image -->
-       <section class="grid justify-center xl:justify-start lg:pt-30 animate-slide-up-10">
-         <div class="md:w-110 md:h-110 w-70 h-70 rounded-xl overflow-hidden shadow-primary-400 shadow-[0_0_25px_rgba(0,0,0,0.15)]">
-           <img
-             src="../assets/Profile.png"
-             class="w-full h-full object-cover scale-110 lg:hover:scale-100 md:active:hover:scale-100 transition duration-700"
-           />
-         </div>
-        </section>
-        <!-- infomation -->
-        <section class="grid xl:pl-12 pt-16 xl:pt-12 justify-center">
-          <!-- about info -->
-        <div class="animate-slide-up-10">
-          <h1 class="xl:text-5xl text-3xl font-bold pb-4">About <span class="text-primary">Me</span></h1>
-          <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed md:text-xl text-text-secondary">
-              I am an 19-year-old Computer Science student at the <span class="text-primary font-semibold">Royal University of Phnom Penh</span>. Driven by a passion for creating high-performance digital experiences, I focus on the intersection of modern aesthetics and technical excellence.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed md:text-xl text-text-secondary pt-3">
-            Outside of coding, I enjoy exploring new technologies, working on personal projects, and continuously improving my web development skills.
-          </p>
-        </div>
-        <!-- education background -->
-        <div class="grid md:grid-cols-2 grid-cols-1 gap-6 mt-6 xl:mt-6">
-          
-          <!-- education -->
-          <div class="shadow shadow-accent-blue bg-[#09215552] py-7 px-5 rounded-lg animate-slide-up-10 group">
-            <h1 class="text-text-muted text-xl">
-              <span class="bg-accent-cyan p-2 rounded-sm text-text mr-3 transition-all duration-300 group-hover:rounded-b-4xl">
-                <i class="fa-solid fa-graduation-cap transition-transform duration-300 group-hover:-translate-y-1"></i>
-              </span>
-              EDUCATION
-            </h1>
-            <h1 class="font-bold pt-4">Royal University of Phnom Penh (RUPP)</h1>
-            <p class="text-xs text-primary pt-1">Computer Science & Engineering</p>
+  <main class="bg-[#0B1120] text-white pt-24 pb-20 px-6 md:px-12 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Header Section -->
+      <header class="mb-16 animate-slide-up">
+        <h1 class="text-4xl md:text-6xl font-black mb-4">
+          About <span class="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Me</span>
+        </h1>
+        <div class="h-1.5 w-24 bg-primary-500 rounded-full"></div>
+      </header>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Column: Profile Image & Personal Info -->
+        <div class="lg:col-span-5 xl:col-span-4 space-y-8 animate-slide-in-left">
+          <!-- Profile Image Card -->
+          <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <div class="relative bg-surface rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+              <img
+                src="../assets/ChoemVannin.PNG"
+                alt="Choem Vannin Profile"
+                class="w-full h-auto object-cover transition duration-700 group-hover:scale-105"
+              />
+            </div>
           </div>
 
-          <!-- location & AGE & NAME -->
-          <div v-for="(data,index) in datas" :key="index" class="shadow shadow-accent-blue bg-[#09215552] py-7 px-5 rounded-lg animate-slide-up-10 group">
-            <h1 class="text-text-muted text-xl">
-              <span class="bg-[#070fef6b] py-2 px-3 rounded-sm text-text mr-3 transition-all duration-300 group-hover:rounded-b-4xl">
-                <i :class="`fa-solid ${data.icon} transition-transform duration-300 group-hover:-translate-y-1`"></i>
-              </span> 
-                {{data.title}}
-            </h1>
-            <h1 class="font-bold pt-4">{{ data.content }}</h1>
+          <!-- Quick Info Cards (Bento Style) -->
+          <div class="grid grid-cols-1 gap-4">
+            <div v-for="(data, index) in personalInfo" :key="index" 
+                 class="p-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 group">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary-500/20 text-primary-400 group-hover:bg-primary-500 group-hover:text-white transition-all duration-300">
+                  <i :class="`fa-solid ${data.icon} text-xl`"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-text-muted uppercase tracking-wider font-semibold">{{ data.title }}</p>
+                  <p class="text-lg font-bold">{{ data.content }}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- interest skill -->
-         <div class="pt-6">
-            <h1 class="md:text-3xl text-xl font-bold"><i class="fa-solid fa-code text-indigo-400"></i> Language & Frameworks</h1>
-            <p class="md:flex grid grid-cols-2 gap-3 items-center gap-x-2 pb-2 pt-6">
-              <span class="border-2 rounded-2xl px-6 py-2 border-primary text-primary"><i class="fa-brands fa-vuejs"></i> Vue.js</span>
-              <span class="border-2 rounded-2xl px-6 py-2 border-primary text-primary"><i class="fa-brands fa-react"></i> React.js</span>
-              <span class="border-2 rounded-2xl px-4 py-2 border-primary text-primary"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-              <span class="border-2 rounded-2xl px-4 py-2 border-primary text-primary"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
-            </p>
-            <p class="md:flex grid items-center gap-3 animate-slide-in-left">
-              <span class="mx-auto md:mx-0 xl:max-w-full border-2 rounded-2xl px-6 py-2 border-primary text-primary"><i class="fa-brands fa-envira"></i> Responsive Design</span>
-              <span class="mx-auto md:mx-0 xl:max-w-full border-2 rounded-2xl px-6 py-2 border-primary text-primary"><i class="fa-brands fa-tailwind-css"></i> Tailwind CSS</span>
-            </p>
-         </div>
-      </section>
+
+        <!-- Right Column: Bio & Experience -->
+        <div class="lg:col-span-7 xl:col-span-8 space-y-12 animate-slide-up-10">
+          <!-- Bio -->
+          <section>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+              <i class="fa-solid fa-user-tie text-secondary-400"></i> My Story
+            </h2>
+            <div class="space-y-4 text-lg text-text-secondary leading-relaxed">
+              <p>
+                I am a 19-year-old Computer Science student at the 
+                <span class="text-primary-400 font-bold">Royal University of Phnom Penh (RUPP)</span>. 
+                My journey into the digital world is fueled by a relentless passion for crafting high-performance, 
+                visually stunning experiences that live at the intersection of modern aesthetics and technical excellence.
+              </p>
+              <p>
+                As a developer, I don't just write code; I build digital solutions that solve problems and engage users. 
+                I thrive in environments that challenge me to learn new technologies and push the boundaries of what's possible on the web.
+              </p>
+            </div>
+          </section>
+
+          <!-- Education Section -->
+          <section>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+              <i class="fa-solid fa-graduation-cap text-accent-cyan"></i> Education
+            </h2>
+            <div class="relative pl-8 border-l-2 border-white/10 space-y-12">
+              <!-- Education Item -->
+              <div class="relative">
+                <div class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-[#0B1120] border-4 border-primary-500"></div>
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:border-primary-500/50 transition-colors">
+                  <span class="text-xs font-bold text-primary-400 uppercase tracking-widest">2023 - Present</span>
+                  <h3 class="text-xl font-bold mt-1">Royal University of Phnom Penh</h3>
+                  <p class="text-accent-cyan font-medium">B.Sc. in Computer Science & Engineering</p>
+                  <p class="mt-3 text-text-muted">
+                    Focusing on core software engineering principles, algorithms, and modern web architectures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Skills Grid -->
+          <section>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+              <i class="fa-solid fa-code text-primary-400"></i> Skills & Expertise
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div v-for="skill in skills" :key="skill.name" 
+                   class="flex items-center gap-3 p-4 bg-white/5 border border-white/10 rounded-xl hover:scale-105 transition-transform duration-300">
+                <i :class="`${skill.icon} text-2xl ${skill.color}`"></i>
+                <span class="font-medium">{{ skill.name }}</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
     </div>
   </main>
 </template>
 
 <script setup>
-const datas=[
-  {title:"LOCATION", content:"Kamboul, Phnom Penh, Cambodia", icon:"fa-location-dot"},
-  {title:"AGE", content:"19 years old", icon:"fa-user"},
-  {title:"NAME", content:"Choem Vannin", icon:"fa-address-card"},
+const personalInfo = [
+  { title: "Location", content: "Phnom Penh, Cambodia", icon: "fa-location-dot" },
+  { title: "Age", content: "19 Years Old", icon: "fa-calendar-days" },
+  { title: "Experience", content: "Frontend Focused", icon: "fa-briefcase" },
+  { title: "Current Study", content: "CS at RUPP", icon: "fa-university" }
+]
+
+const skills = [
+  { name: "Vue.js", icon: "fa-brands fa-vuejs", color: "text-[#42b883]" },
+  { name: "React.js", icon: "fa-brands fa-react", color: "text-[#61dafb]" },
+  { name: "JavaScript", icon: "fa-brands fa-js", color: "text-[#f7df1e]" },
+  { name: "Tailwind CSS", icon: "fa-solid fa-wind", color: "text-[#38bdf8]" },
+  { name: "Bootstrap", icon: "fa-brands fa-bootstrap", color: "text-[#7952b3]" },
+  { name: "Responsive Design", icon: "fa-solid fa-mobile-screen", color: "text-[#10b981]" }
 ]
 </script>
 
 <style scoped>
-
+.bg-surface {
+  background-color: var(--color-surface, #141218);
+}
 </style>

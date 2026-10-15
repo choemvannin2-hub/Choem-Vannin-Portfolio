@@ -5,7 +5,7 @@
         <span class="text-accent-blue text-[8px] md:text-xs font-semibold">● MY SKILLS</span>
         <h1 class="text-5xl md:text-6xl text-text font-semibold">Building</h1>
         <span class="text-4xl md:text-6xl font-semibold bg-linear-to-r from-65% from-accent-blue to-purple-700 bg-clip-text text-transparent drop-shadow-2xl">modern web</span>
-        <h1 class="text-4xl md:text-6xl text-text font-semibold">experiences.</h1>
+        <span class="block text-4xl md:text-6xl text-text font-semibold">experiences.</span>
         <p class="text-text-muted pt-5 text-sm md:text-lg">I combine design, code and creativity to build fast,
         responsive and user-focused web application.
         </p>
@@ -18,7 +18,7 @@
       </section>
       <!-- img section  -->
       <section class="hidden md:block">
-        <img src="../assets/GPT-computer.png" alt="img" class="w-full">
+        <img src="../assets/GPT-computer.png" alt="Illustration of web development skills" class="w-full">
       </section>
       <!-- skill box section -->
       <section class="mt-6 md:mt-0 bg-linear-to-b from-0% from-accent-blue to-20% to-background py-3 px-6 rounded-lg space-y-3 shadow shadow-accent-blue">
@@ -30,9 +30,9 @@
           
           <!-- html -->
            <div v-for="(data, index) in frontend" :key="index" class="flex gap-x-4">
-            <img :src="`${ data.img }`" alt="html" class="w-8 h-8 mt-2">
+            <img :src="data.img" :alt="`${data.title} logo`" class="w-8 h-8 mt-2">
             <div>
-              <h1>{{data.title}}</h1>
+              <h2>{{data.title}}</h2>
               <p class="text-text-muted text-sm">{{ data.describe }}</p>
             </div>
            </div>
@@ -49,9 +49,9 @@
         <div class="grid grid-cols-1 gap-y-6">
           <!-- vue js -->
            <div class="flex gap-x-4">
-            <img src="../assets/vue.svg" alt="html" class="w-8 h-8 mt-2">
+            <img src="../assets/vue.svg" alt="Vue.js logo" class="w-8 h-8 mt-2">
             <div>
-              <h1>Vue.js</h1>
+              <h2>Vue.js</h2>
               <p class="text-text-muted text-sm">
                 Progressive framework for building user interfaces
               </p>
@@ -59,9 +59,9 @@
            </div>
           <!-- react js -->
            <div class="flex gap-x-4 pb-14">
-            <img src="../assets/reactjs.png" alt="html" class="w-8 h-8 mt-2">
+            <img src="../assets/reactjs.png" alt="React logo" class="w-8 h-8 mt-2">
             <div>
-              <h1>React.js</h1>
+              <h2>React.js</h2>
               <p class="text-text-muted text-sm">
                 Component-based library for building UI
               </p>
@@ -78,9 +78,9 @@
         <div class="grid md:grid-cols-2 gap-y-3">
           
            <div v-for="(data, index) in tools" :key="index" class="flex gap-x-4">
-            <img :src="`${ data.img }`" alt="html" class="w-8 h-8 mt-2">
+            <img :src="data.img" :alt="`${data.title} icon`" class="w-8 h-8 mt-2">
             <div>
-              <h1>{{data.title}}</h1>
+              <h2>{{data.title}}</h2>
               <p class="text-text-muted text-sm">{{ data.describe }}</p>
             </div>
            </div>

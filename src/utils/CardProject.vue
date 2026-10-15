@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="row-span-1">
-            <h1 class="md:text-3xl text-2xl font-bold transition-all duration-500 group-hover:text-primary">{{ props.title }}</h1>
+            <h2 class="md:text-3xl text-2xl font-bold transition-all duration-500 group-hover:text-primary">{{ props.title }}</h2>
             <p class="text-text-muted pt-3"> {{ props.description }} </p>
         </div>
         <div class="row-span-1 flex justify-start items-center gap-x-3">

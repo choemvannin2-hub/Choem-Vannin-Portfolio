@@ -2,7 +2,7 @@
   <main class="md:fixed hidden md:block w-full z-50">
     <section class="flex shadow-2xs bg-transparent backdrop-blur-md rounded-4xl mt-4 max-w-6xl mx-auto">
       <div class="lg:pe-70 sm:pe-60">
-        <router-link to="/"><img class="w-20 ms-5 py-2 " src="../assets/logo.png" alt=""></router-link>
+        <router-link to="/" aria-label="Choem Vannin home"><img class="w-20 ms-5 py-2 " src="../assets/logo.png" alt="Choem Vannin logo"></router-link>
       </div>
       <div class="flex w-2xl myColor justify-around items-center font-semibold text-lg font-sans">
         <!-- Home page -->

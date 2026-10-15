@@ -10,7 +10,7 @@
         Hi, I'm 
         <span class="md:text-5xl text-3xl font-bold bg-linear-to-r from-pink-400 to-sky-500 bg-clip-text text-transparent drop-shadow-2xl glow-text">Choem Vannin</span>
       </h1>
-      <h1 class="md:text-3xl text-2xl mx-auto font-bold pb-12 scale-y-110 text-[#B0B8C1]">{{ displayedText }} <span class="animate-pulse font-light">|</span></h1>
+      <p class="md:text-3xl text-2xl mx-auto font-bold pb-12 scale-y-110 text-[#B0B8C1]" aria-label="Frontend Developer and IT Student">{{ displayedText }} <span class="animate-pulse font-light" aria-hidden="true">|</span></p>
       <!-- btn -->
       <div class="space-x-6 mx-auto flex items-center justify-between md:text-3xl text-2xl animate-slide-up">
         <a href="https://github.com/choemvannin2-hub" target="_blank"><i class="fa-brands fa-github" style="color: rgb(216, 230, 255);"></i></a>

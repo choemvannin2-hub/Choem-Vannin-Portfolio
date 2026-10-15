@@ -70,7 +70,7 @@
     <!--  -->
 
     <section class="grid items-center md:grid-cols-2 bg-card border-t shadow shadow-primary-light border-border md:py-4 pt-4 pb-2 text-white">
-      <h1 class="md:ps-16 mx-auto md:mx-0 text-text-muted text-xs md:text-[14px]">© 2026 <span class="text-primary">Choem Vannin</span>. All rights reserved.</h1>
+      <p class="md:ps-16 mx-auto md:mx-0 text-text-muted text-xs md:text-[14px]">© 2026 <span class="text-primary">Choem Vannin</span>. All rights reserved.</p>
       <div class="md:flex hidden justify-around xl:pl-20 xl:pr-24 items-center text-text-muted">
         <a href="">Privacy Policy</a>
         <i class="fa-solid fa-circle text-[0.3rem]"></i>
